@@ -61,6 +61,5 @@ while a == 'help':
                  f", Upload Speed: {get_size(us / UPDATE_DELAY)}/s   "
                  f", Download Speed: {get_size(ds / UPDATE_DELAY)}/s      ", end="\r")
             bytes_sent, bytes_recv = io_2.bytes_sent, io_2.bytes_recv
-    
-    elif a == quit:
-        break
+    elif a == 'auto-py-to-exe':
+        subprocess.run("auto-py-to-exe")  
